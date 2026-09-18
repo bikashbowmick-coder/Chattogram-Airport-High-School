@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Chattogram Airport High School",
+  "description": "Official website of Chattogram Airport High School (EIIN: 104248), Patenga, Chattogram. Providing quality secondary education in Science, Humanities, and Business Education since 1965.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

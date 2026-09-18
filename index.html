@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
+            var existingDesc = Object.getOwnPropertyDescriptor(window, 'fetch');
+            if (!existingDesc || (!existingDesc.get && !existingDesc.set)) {
+              var activeFetch = window.fetch.bind(window);
+              var descriptor = {
+                get: function() { return activeFetch; },
+                set: function(newFetch) { activeFetch = newFetch; },
+                configurable: true,
+                enumerable: true
+              };
+              try { Object.defineProperty(window, 'fetch', descriptor); } catch (e) {}
+            }
+          }
+        } catch (err) {}
+      })();
+    </script>
+    <title>Chattogram Airport High School | Patenga, Chattogram | চট্টগ্রাম এয়ারপোর্ট উচ্চ বিদ্যালয়</title>
+    <meta name="description" content="Official website of Chattogram Airport High School, EIIN 104248, Patenga, Chattogram. Get admission information, notices, academic information, results, routines, events, teachers, gallery and school updates." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://chattogramairporthighschool.edu.bd" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <meta property="og:title" content="Chattogram Airport High School | Patenga, Chattogram" />
+    <meta property="og:description" content="Official website of Chattogram Airport High School, EIIN 104248, Patenga, Chattogram. Knowledge is Power — শিক্ষাই শক্তি।" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Chattogram Airport High School",
+      "alternateName": "চট্টগ্রাম এয়ারপোর্ট উচ্চ বিদ্যালয়",
+      "foundingDate": "1965",
+      "identifier": "104248",
+      "telephone": "01683489379",
+      "email": "ctgairport_highschool@yahoo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Airport, Bandar",
+        "addressLocality": "Patenga, Chattogram",
+        "addressCountry": "BD"
+      },
+      "slogan": "KNOWLEDGE IS POWER / শিক্ষাই শক্তি"
+    }
+    </script>
+  </head>
+  <body class="font-sans antialiased text-slate-800 bg-slate-50 selection:bg-emerald-700 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
